@@ -1,0 +1,22 @@
+@import 'components/variaveis';
+@import 'components/header';
+@import 'components/menu';
+@import 'components/hero';
+@import 'components/footer';
+
+* {
+    font-family: $primary-font;
+}
+
+body {
+    margin: 0;
+}
+
+.background__hero {
+    background-image: url('../img/frameHome.svg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: top 300px;
+}
+
+

@@ -1,0 +1,12 @@
+@import 'variaveis';
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 32px 0 32px;
+    padding-top: 50px;
+    .header__button--menu {
+        border-style: none;
+        background: none;
+    }
+}

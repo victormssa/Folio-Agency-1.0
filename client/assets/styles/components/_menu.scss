@@ -1,0 +1,69 @@
+@import 'variaveis';
+.menu {
+    background-color: $dark-color;
+    background-image: url('../img/lineMenu.png');
+    background-repeat: no-repeat;
+    background-position: top 0 right -15px;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: -100vw;
+    transition: .25s;
+    .menu__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 32px 0 32px;
+        padding-top: 40px;
+        margin-bottom: 100px;
+        .menu__logo{
+            height: 32px;
+            width: 127.19999694824219px;
+            align-self: center;
+            padding: 16px;
+            
+        }
+        .menu__button--exit {
+            border-style: none;
+            background-color: $dark-color;
+        }
+    }
+    .menu__list {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        .menu__list--link {
+            height: 64px;
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 40px;
+            letter-spacing: -0.5px;
+            color: #595976;
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            &:hover {
+                color: white;
+            }
+        }
+    }
+    .menu__list--social {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        margin-top: 80px;
+        .menu__list--social-link {
+            margin-right: 30px;
+            
+        }
+    }
+    
+}
+
+.menu__active{
+    right: 0;
+    transition: .25s;
+}
+
+
